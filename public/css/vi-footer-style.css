@@ -1,0 +1,12 @@
+/* FOOTER */
+.vi-footer{
+	margin: 20px 0;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.vi-footer .developed-by{
+	margin-top: 10px;
+}
