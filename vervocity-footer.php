@@ -6,7 +6,7 @@ Plugin URI: https://github.com/vervocity/wp-vervocity-footer
 Author: Vervocity
 Author URI: https://vervocity.io
 Text Domain: vervocity-footer
-Version: 1.0.1
+Version: 1.0.2
 */
 
 // Include vi-functions.php, use require_once to stop the script if mfp-functions.php is not found
