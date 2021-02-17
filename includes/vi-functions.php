@@ -7,7 +7,7 @@ add_action( 'wp_enqueue_scripts', 'vi_footer_register_plugin_styles' );
  * Register style sheet.
  */
 function vi_footer_register_plugin_styles() {
-	wp_register_style( 'vi-footer-style', plugins_url( 'vervocity-footer/public/css/vi-footer-style.css' ) );
+	wp_register_style( 'vi-footer-style', plugins_url( 'wp-vervocity-footer/public/css/vi-footer-style.css' ) );
 	wp_enqueue_style( 'vi-footer-style' );
 }
 
