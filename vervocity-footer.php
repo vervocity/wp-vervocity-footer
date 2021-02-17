@@ -1,12 +1,12 @@
 <?php
 /*
 Plugin Name: Vervocity Footer
-Description: A plugin to display the copyright information for the website along with the Vervocity Interactive logo.
+Description: A plugin to display the copyright information for the website along with the Vervocity logo.
 Plugin URI: https://github.com/vervocity/wp-vervocity-footer
 Author: Vervocity
 Author URI: https://vervocity.io
-Text Domain: vervocity-footer
-Version: 1.0.2
+Text Domain: wp-vervocity-footer
+Version: 1.0.3
 */
 
 // Include vi-functions.php, use require_once to stop the script if mfp-functions.php is not found
