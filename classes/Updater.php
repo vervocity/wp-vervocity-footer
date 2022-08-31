@@ -62,7 +62,7 @@ class Updater
         }
 
         $zip = $this->downloadCurrentRelease();
-        $upload = wp_upload_bits($filename, null, $zip, $time);
+        $upload = wp_upload_bits($filename, null, $zip);
         return $upload['url'];
     }
 
@@ -76,16 +76,20 @@ class Updater
 
     public function modifyTransient($transient)
     {
-        if (!property_exists($transient, 'checked')) {
+        if (! isset($transient->checked, $transient->checked[$this->basename])) {
             return $transient;
         }
 
         $release = $this->getCurrentRelease();
 
+        if (! isset($release, $release['tag_name'])) {
+            return $transient;
+        }
+
         // Check if we need an update
         $hasUpdate = version_compare($release['tag_name'], $transient->checked[$this->basename], 'gt');
 
-        if (!$hasUpdate) {
+        if (! $hasUpdate) {
             return $transient;
         }
 
