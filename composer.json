@@ -1,0 +1,22 @@
+{
+    "name": "vervocity/vervocity-footer",
+    "description": "A plugin to display the copyright information for the website along with the Vervocity logo.",
+    "type": "wordpress-plugin",
+    "require-dev": {
+        "vervocity/coding-standard": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vervocity\\Footer\\": "classes/"
+        }
+    },
+    "minimum-stability": "stable",
+    "scripts": {
+        "post-autoload-dump": [
+            "Vervocity\\CodingStandard\\ComposerScripts::postAutoloadDump"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }    
+}
