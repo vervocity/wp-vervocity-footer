@@ -15,4 +15,4 @@ require_once plugin_dir_path(__FILE__) . 'includes/vi-functions.php';
 require_once plugin_dir_path(__FILE__) . 'classes/Updater.php';
 
 // Create new GitHub updater with user and repo name
-new \Vervocity\Footer\Updater(__FILE__, 'vervocity', 'wp-vervocity-footer');
+new Vervocity\Footer\Updater(__FILE__, 'vervocity', 'wp-vervocity-footer');
